@@ -1,0 +1,76 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffeb3b; /* Warna latar belakang kuning (yellow) */
+}
+
+.timer-container {
+    text-align: center;
+    background-color: #ff7043; /* Warna latar belakang merah orange */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+}
+
+#timer {
+    font-size: 48px;
+    margin-top: 20px;
+    color: #ffffff; /* Warna teks putih */
+}
+
+#cooking-level, #start-button, #cancel-button, #stop-sound-button {
+    margin-top: 20px;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #000000; /* Warna teks hitam */
+}
+
+#cooking-level {
+    margin-right: 10px;
+    color: #000000; /* Warna teks hitam */
+}
+
+#start-button {
+    background-color: #4caf50; /* Warna latar belakang hijau */
+    transition: background-color 0.3s ease;
+}
+
+#start-button:hover {
+    background-color: #45a049; /* Warna latar belakang hijau saat digulirkan */
+}
+
+#cancel-button, #stop-sound-button {
+    background-color: #f44336; /* Warna latar belakang merah */
+    transition: background-color 0.3s ease;
+}
+
+#cancel-button:disabled, #stop-sound-button.hidden {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#cancel-button:hover:enabled, #stop-sound-button.hidden:hover {
+    background-color: #d32f2f; /* Warna latar belakang merah saat digulirkan */
+}
+
+/* ... (kode CSS yang sudah ada sebelumnya) ... */
+
+.loader {
+    width: 0;
+    height: 10px; /* Sesuaikan tinggi loading sesuai preferensi Anda */
+    background-color: #4169E1; /* Warna biru royal untuk loading */
+    transition: width 2s ease; /* Animasi loading horizontal selama 2 detik */
+}
+
+.loading {
+    width: 100%; /* Lebar loading 100% saat sedang memasak */
+    height: 10px; /* Sesuaikan tinggi loading sesuai preferensi Anda */
+}
